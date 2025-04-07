@@ -8,7 +8,11 @@ WORKDIR /app
 COPY pubspec.* ./
 
 # دریافت وابستگی‌های پروژه با استفاده از flutter pub
+RUN dart pub get
 RUN flutter pub get
+
+RUN ls -la /root/.pub-cache/hosted/pub.dev/teledart-0.6.1/lib/
+
 
 # کپی کردن کل سورس کد به داخل کانتینر
 COPY . .

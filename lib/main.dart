@@ -9,6 +9,8 @@ void main() async {
   final teledart = TeleDart(botToken, Event(username!));
   teledart.start();
 
+  print('Bot started...');
+
   teledart.setMyCommands([
     td.BotCommand(command: 'start', description: 'شروع'),
   ]);
