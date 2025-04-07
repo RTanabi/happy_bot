@@ -1,0 +1,6 @@
+8113322381:AAF22u8-7pbMC7_HtE66YeLHG26NkmwxCLE
+7686643155:AAFXt83u2W55Y_DKu69x9RlwMZOVn8Gwukc
+
+final botToken = "8113322381:AAF22u8-7pbMC7_HtE66YeLHG26NkmwxCLE";
+  final username = (await Telegram(botToken).getMe()).username;
+  final teledart = TeleDart(botToken, Event(username!));
