@@ -4,7 +4,7 @@ import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
 
 void main() async {
-  final botToken = "7686643155:AAFXt83u2W55Y_DKu69x9RlwMZOVn8Gwukc";
+  final botToken = "7919963471:AAH_80IECrKTbf0HJ5Dz3moo-R29w1BK08Y";
   final username = (await Telegram(botToken).getMe()).username;
   final teledart = TeleDart(botToken, Event(username!));
   teledart.start();
